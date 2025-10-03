@@ -230,6 +230,9 @@ padding: 0.5em;
 .box-compra{
 display: flex;
 }
+.seismeses{
+background: #FA8F93;
+}    
 div .box-compra{
 padding: 1px;
 flex-flow:row;
@@ -356,4 +359,5 @@ color: #ffffff;
 grid-column-start: span 3;
 text-align: center;
 }
+
 /*FIN PIE DE LA PÁGINA*/
