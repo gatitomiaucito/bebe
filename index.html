@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Un rincón dedicado al amor de mi vida: recuerdos, canciones y palabras del corazón.">
+    <meta name="description" content="Un rincón gatuno dedicado al amor de mi vida: recuerdos, canciones y palabras del corazón.">
     <meta name="theme-color" content="#e0607e">
-    <title>Mi bebé · El amor de mi vida</title>
+    <title>Mi gatita · El amor de mi vida</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Fredoka:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylos.css">
+    <link rel="stylesheet" href="gatitos.css">
 </head>
 <body>
 
     <!-- ENCABEZADO -->
     <header class="encabezado" id="encabezado">
         <div class="encabezado__interno">
-            <a href="#portada" class="logo">El amor de mi vida</a>
+            <a href="#portada" class="logo">🐱 El amor de mi vida</a>
             <nav class="nav" aria-label="Navegación principal">
                 <a href="#video">Video</a>
+                <a href="#gatitos">Gatitos</a>
                 <a href="#recuerdos">Recuerdos</a>
                 <a href="#canciones">Canciones</a>
                 <a href="#seis-meses">Seis meses</a>
@@ -33,9 +35,10 @@
         <img src="imagen/Captura de pantalla (229).png" class="portada__img" alt="">
         <div class="portada__capa"></div>
         <div class="portada__contenido">
+            <div class="portada__patitas" aria-hidden="true">🐾 🐾 🐾</div>
             <h2 class="portada__titulo">Creando nuevos mundos, historias y recuerdos</h2>
             <p class="portada__frase">“Vivir consiste en construir futuros recuerdos”</p>
-            <a href="#recuerdos" class="btn btn--claro">Descubrir</a>
+            <a href="#recuerdos" class="btn btn--claro">Descubrir 🐾</a>
         </div>
     </section>
 
@@ -61,25 +64,51 @@
         <section class="seccion seccion--video" id="video">
             <div class="contenedor contenedor--video">
                 <header class="seccion__titulo reveal">
-                    <span class="seccion__etiqueta">Para ti</span>
+                    <span class="seccion__etiqueta">🐾 Para ti</span>
                     <h2>Nuestro video</h2>
                     <p class="seccion__subtitulo">Un momento que quiero guardar contigo para siempre.</p>
                 </header>
 
                 <div class="video reveal">
-                    <!-- OPCIÓN A: video guardado en tu carpeta (cambia la ruta por el nombre de tu archivo) -->
-                    <video controls preload="metadata" poster="imagen/Cumpleaños Gatuno Lleno de Alegría.png">
-                        <source src="https://drive.google.com/file/d/1wcZboptbNqRaA7QTFORlLfY9Zz0k-wl6/view?usp=drive_link" type="video/mp4">
-                        <a href="https://drive.google.com/file/d/1wcZboptbNqRaA7QTFORlLfY9Zz0k-wl6/view?usp=drive_link">https://drive.google.com/file/d/1wcZboptbNqRaA7QTFORlLfY9Zz0k-wl6/view?usp=drive_link</a>Tu navegador no puede reproducir este video.
-                        <link rel="preconnect" href="https://drive.google.com/file/d/1wcZboptbNqRaA7QTFORlLfY9Zz0k-wl6/view?usp=drive_link">
-                    </video>
+                    <!-- Video de Google Drive: se usa la dirección /preview dentro de un iframe.
+                         IMPORTANTE: en Drive, el archivo debe compartirse como
+                         "Cualquier persona con el enlace" para que se vea en la página. -->
+                    <iframe
+                        src="https://drive.google.com/file/d/1wcZboptbNqRaA7QTFORlLfY9Zz0k-wl6/preview"
+                        title="Nuestro video"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
 
-                    <!-- OPCIÓN B: video de YouTube. Borra el bloque <video> de arriba y quita los comentarios de abajo,
-                         cambiando ID_DEL_VIDEO por el código de tu enlace (lo que va después de v=)
-                    <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" title="Nuestro video"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen loading="lazy"></iframe>
-                    -->
+                <p class="video__enlace">
+                    ¿No carga? <a href="https://drive.google.com/file/d/1wcZboptbNqRaA7QTFORlLfY9Zz0k-wl6/view?usp=drive_link" target="_blank" rel="noopener">Ábrelo directo en Drive 🐱</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- GALERÍA DE GATITOS -->
+        <section class="seccion seccion--crema" id="gatitos">
+            <div class="contenedor">
+                <header class="seccion__titulo reveal">
+                    <span class="seccion__etiqueta">🐱 Ternura pura</span>
+                    <h2>Mis gatitos favoritos</h2>
+                    <p class="seccion__subtitulo seccion__subtitulo--oscuro">Porque cada uno me recuerda a ti.</p>
+                </header>
+
+                <div class="galeria reveal">
+                    <figure class="galeria__item galeria__item--alto">
+                        <img src="imagen/gatitos-1.jpg" alt="Gatitos apilados mirando a la cámara" loading="lazy">
+                    </figure>
+                    <figure class="galeria__item galeria__item--ancho">
+                        <img src="imagen/gatitos-2.jpg" alt="Gatito atigrado gris con ojos grandes" loading="lazy">
+                    </figure>
+                    <figure class="galeria__item">
+                        <img src="imagen/gatitos-3.jpg" alt="Gatito naranja jugando con sus patitas" loading="lazy">
+                    </figure>
+                    <figure class="galeria__item">
+                        <img src="imagen/gatitos-4.jpg" alt="Gatito naranja durmiendo" loading="lazy">
+                    </figure>
                 </div>
             </div>
         </section>
@@ -88,7 +117,7 @@
         <section class="seccion seccion--rosa" id="recuerdos">
             <div class="contenedor">
                 <header class="seccion__titulo reveal">
-                    <span class="seccion__etiqueta">Nuestra historia</span>
+                    <span class="seccion__etiqueta">🐾 Nuestra historia</span>
                     <h2>Recuerdos</h2>
                 </header>
 
@@ -100,7 +129,7 @@
                         <div class="card__txt">
                             <h3>El mejor comienzo</h3>
                             <p>Mi vida</p>
-                            <a href="https://mega.nz/file/CoZmmRBb#s-aXu_weOw07XA3MyOTeGsPB1k-lPE5f5Zz4MDtlCXU" class="btn" target="_blank" rel="noopener">Ver</a>
+                            <a href="https://mega.nz/file/CoZmmRBb#s-aXu_weOw07XA3MyOTeGsPB1k-lPE5f5Zz4MDtlCXU" class="btn" target="_blank" rel="noopener">Ver 🐾</a>
                         </div>
                     </article>
 
@@ -111,7 +140,7 @@
                         <div class="card__txt">
                             <h3>Tú me cambiaste la vida</h3>
                             <p>Mi gatita hermosa</p>
-                            <a href="https://mega.nz/file/y0x2kCJR#L8VHuPyvALnxzPqhSrFgyVuNKcD1wNxGW6pyRN1hO6E" class="btn" target="_blank" rel="noopener">Ver</a>
+                            <a href="https://mega.nz/file/y0x2kCJR#L8VHuPyvALnxzPqhSrFgyVuNKcD1wNxGW6pyRN1hO6E" class="btn" target="_blank" rel="noopener">Ver 🐾</a>
                         </div>
                     </article>
 
@@ -122,7 +151,7 @@
                         <div class="card__txt">
                             <h3>El sueño más grande</h3>
                             <p>Mi dulce niña</p>
-                            <a href="https://mega.nz/file/ulJF3Dga#SBW4M1Afn8334ssfJAalaktLmPqBLz1qLokbMDJkUfY" class="btn" target="_blank" rel="noopener">Ver</a>
+                            <a href="https://mega.nz/file/ulJF3Dga#SBW4M1Afn8334ssfJAalaktLmPqBLz1qLokbMDJkUfY" class="btn" target="_blank" rel="noopener">Ver 🐾</a>
                         </div>
                     </article>
 
@@ -133,7 +162,7 @@
                         <div class="card__txt">
                             <h3>Dos almas gemelas</h3>
                             <p>Mi corazocito</p>
-                            <a href="https://mega.nz/file/C8wCBJLa#zGMRM-r4G6N25HDxqWSlRbYtCUAKbQCLwJxGoO20Vtg" class="btn" target="_blank" rel="noopener">Ver</a>
+                            <a href="https://mega.nz/file/C8wCBJLa#zGMRM-r4G6N25HDxqWSlRbYtCUAKbQCLwJxGoO20Vtg" class="btn" target="_blank" rel="noopener">Ver 🐾</a>
                         </div>
                     </article>
                 </div>
@@ -145,7 +174,7 @@
             <div class="contenedor">
                 <header class="seccion__titulo seccion__titulo--fila reveal">
                     <div>
-                        <span class="seccion__etiqueta">Con música</span>
+                        <span class="seccion__etiqueta">🎵 Con música</span>
                         <h2>Canciones del corazón</h2>
                     </div>
                     <div class="carrusel__controles">
@@ -162,7 +191,7 @@
                         <div class="card__txt">
                             <h3>Gatita corazón</h3>
                             <p>Mi luz</p>
-                            <a href="https://mega.nz/file/etoFER4R#KSTS4pPsfRLUUokxbt0_8oErUoFtIE-qnCkq6omrUmY" class="btn" target="_blank" rel="noopener">Escuchar</a>
+                            <a href="https://mega.nz/file/etoFER4R#KSTS4pPsfRLUUokxbt0_8oErUoFtIE-qnCkq6omrUmY" class="btn" target="_blank" rel="noopener">Escuchar 🎧</a>
                         </div>
                     </article>
 
@@ -173,7 +202,7 @@
                         <div class="card__txt">
                             <h3>Mi amor eterno</h3>
                             <p>En esta vida y las que vengan</p>
-                            <a href="https://suno.com/s/oKcqfPPdm4Laodcf" class="btn" target="_blank" rel="noopener">Escuchar</a>
+                            <a href="https://suno.com/s/oKcqfPPdm4Laodcf" class="btn" target="_blank" rel="noopener">Escuchar 🎧</a>
                         </div>
                     </article>
 
@@ -184,7 +213,7 @@
                         <div class="card__txt">
                             <h3>Todo inició con una carta</h3>
                             <p>Nuestra historia</p>
-                            <a href="https://suno.com/s/X20XglaiFQEDTgju" class="btn" target="_blank" rel="noopener">Escuchar</a>
+                            <a href="https://suno.com/s/X20XglaiFQEDTgju" class="btn" target="_blank" rel="noopener">Escuchar 🎧</a>
                         </div>
                     </article>
 
@@ -195,7 +224,7 @@
                         <div class="card__txt">
                             <h3>Amor de abril a mayo</h3>
                             <p>Un inicio sin fin</p>
-                            <a href="https://suno.com/s/RVTsevH70S0JTaEx" class="btn" target="_blank" rel="noopener">Escuchar</a>
+                            <a href="https://suno.com/s/RVTsevH70S0JTaEx" class="btn" target="_blank" rel="noopener">Escuchar 🎧</a>
                         </div>
                     </article>
 
@@ -206,7 +235,7 @@
                         <div class="card__txt">
                             <h3>Eso y más</h3>
                             <p>Un amor sincero</p>
-                            <a href="https://www.youtube.com/watch?v=v5Wl9_14GTY" class="btn" target="_blank" rel="noopener">Escuchar</a>
+                            <a href="https://www.youtube.com/watch?v=v5Wl9_14GTY" class="btn" target="_blank" rel="noopener">Escuchar 🎧</a>
                         </div>
                     </article>
 
@@ -217,7 +246,7 @@
                         <div class="card__txt">
                             <h3>El amor de mi vida</h3>
                             <p>Un sueño hecho realidad</p>
-                            <a href="https://www.youtube.com/watch?v=jOx0JEC_3P4" class="btn" target="_blank" rel="noopener">Escuchar</a>
+                            <a href="https://www.youtube.com/watch?v=jOx0JEC_3P4" class="btn" target="_blank" rel="noopener">Escuchar 🎧</a>
                         </div>
                     </article>
 
@@ -228,7 +257,7 @@
                         <div class="card__txt">
                             <h3>Me cambiaste la vida</h3>
                             <p>Solo quiero estar a tu lado</p>
-                            <a href="https://www.youtube.com/watch?v=_X3PPuF_yOE" class="btn" target="_blank" rel="noopener">Escuchar</a>
+                            <a href="https://www.youtube.com/watch?v=_X3PPuF_yOE" class="btn" target="_blank" rel="noopener">Escuchar 🎧</a>
                         </div>
                     </article>
                 </div>
@@ -243,10 +272,10 @@
                         <img src="imagen/IMG-20250817-WA0004.jpg" alt="Seis meses bajo la luna" loading="lazy">
                     </div>
                     <div class="destacado__txt">
-                        <span class="seccion__etiqueta">Un capítulo especial</span>
+                        <span class="seccion__etiqueta">🌙 Un capítulo especial</span>
                         <h2>Seis meses bajo la luna</h2>
                         <p>Lo mejor de mi vida eres tú, bebé.</p>
-                        <a href="https://mega.nz/file/S1wiXSiT#iJL5KCbr8_0G77od_yZneGySPHQVpyDKu84Luk2SkRY" class="btn" target="_blank" rel="noopener">Escuchar y ver amor</a>
+                        <a href="https://mega.nz/file/S1wiXSiT#iJL5KCbr8_0G77od_yZneGySPHQVpyDKu84Luk2SkRY" class="btn" target="_blank" rel="noopener">Escuchar y ver amor 🐱</a>
                     </div>
                 </div>
             </div>
@@ -256,9 +285,9 @@
         <section class="seccion seccion--carta" id="gracias">
             <div class="contenedor contenedor--estrecho">
                 <div class="carta reveal">
-                    <h2 class="carta__titulo">Gracias, bebé</h2>
+                    <h2 class="carta__titulo">Gracias, bebé 😻</h2>
                     <p class="carta__texto">“Desde que llegaste, mi vida tomó un color que ni sabía que existía. Eres la paz en mis momentos de caos y la alegría que ilumina hasta mi día más gris. Contigo, hasta lo simple se vuelve extraordinario porque lo vivo a tu lado. No te amo solo por cómo me haces sentir, sino por la persona que soy cuando estoy contigo: la mejor versión de mí mismo. Mi mayor sueño no es algo lejano, ya se cumple cada día al tener tu mano para sostener y tu corazón para amar. Eres, sin duda, el regalo más valioso que la vida me ha dado.”</p>
-                    <p class="carta__firma">¡Te amo, mi vida!</p>
+                    <p class="carta__firma">¡Te amo, mi vida! 🐾</p>
                 </div>
             </div>
         </section>
@@ -277,7 +306,7 @@
                 <img src="imagen/descarga.jfif" alt="Para ti, con todo mi amor" loading="lazy">
             </div>
         </div>
-        <p class="pie__copy">Hecho con amor para ti 💗</p>
+        <p class="pie__copy">Hecho con amor para ti 🐱💗🐾</p>
     </footer>
 
     <script>
